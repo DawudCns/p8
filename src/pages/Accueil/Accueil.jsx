@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "/src/pages/Accueil/Accueil.css";
-import Template from "/src/components/5_Templates/Templates";
+import Template from "/src/conponents/5_Templates/Templates";
 
 function Accueil() {
   return (
