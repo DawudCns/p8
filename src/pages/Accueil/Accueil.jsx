@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import styles from "/src/pages/Accueil/Accueil.css";
 import Template from "/src/conponents/5_Templates/Templates";
+import Banner from "/src/components/2_Fondations/Banner/Banner";
+import BannerImg from "/src/assets/images/IMG.jpg";
+import data from "../../../fichier.json";
 
 function Accueil() {
   return (
