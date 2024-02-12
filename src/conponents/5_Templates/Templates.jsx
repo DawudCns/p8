@@ -1,6 +1,7 @@
-import Footer from "/src/conponents/3_Sructures/Footer/Footer";
-import Header from "/src/conponents/3_Sructures/Header/Header";
-import styles from "/src/conponents/5_Templates/Templates.css";
+import Footer from "/src/conponents/3_Structures/Footer/Footer";
+import Header from "/src/conponents/3_Structures/Header/Header";
+import styles from "/src/conponents/5_Templates/Templates.module.css";
+import PropTypes from "prop-types";
 
 const Template = ({ children }) => {
   return (
@@ -10,6 +11,10 @@ const Template = ({ children }) => {
       <Footer />
     </div>
   );
+};
+
+Template.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Template;

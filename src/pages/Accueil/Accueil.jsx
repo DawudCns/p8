@@ -3,7 +3,7 @@ import styles from "/src/pages/Accueil/Accueil.css";
 import Template from "/src/conponents/5_Templates/Templates";
 import Banner from "/src/conponents/2_Fondations/Banner/Banner";
 import BannerImg from "/src/assets/images/IMG.jpg";
-import data from "../../../fichier.json";
+// import data from "/P8/fichier.json";
 
 function Accueil() {
   return (

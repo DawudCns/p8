@@ -1,5 +1,5 @@
-import Footer from "/src/conponents/3_Sructures/Footer/Footer";
-import Header from "/src/conponents/3_Sructures/Header/Header";
+import Footer from "/src/conponents/3_Structures/Footer/Footer";
+import Header from "/src/conponents/3_Structures/Header/Header";
 
 const Modeles = ({ children }) => {
   return (

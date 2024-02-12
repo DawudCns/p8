@@ -1,4 +1,4 @@
-import styles from "/src/conponents/3_Structures/Footer/Footer.css";
+import styles from "/src/conponents/3_Structures/Footer/Footer.module.css";
 import LogoBis from "/src/assets/images/logo-kasa.png";
 
 function Footer() {
