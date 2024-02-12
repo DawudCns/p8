@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 // Importation des composants et fonctions de react-router-dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Importation du composant Accueil
-import Accueil from "../../pages/Accueil/Accueil.jsx";
+import Accueil from "../pages/Accueil/Accueil";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   //React StrictMode pour activer un ensemble des vérifs et des comportements supplémentaires pour le développement
