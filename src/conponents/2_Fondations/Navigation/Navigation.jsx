@@ -16,3 +16,4 @@ const Navigation = () => {
 };
 
 // Exportation du composant Navigation
+export default Navigation;

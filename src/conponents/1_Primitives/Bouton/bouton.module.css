@@ -1,0 +1,45 @@
+.btncomplet {
+  width: 100%;
+  position: relative;
+}
+
+.rideauDeroulant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: auto;
+  height: 52px;
+  border-radius: 5px;
+  background: rgba(255, 96, 96, 1);
+}
+
+.categories {
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+
+.rideauDeroulant > button {
+  border: none;
+  background-color: rgba(255, 96, 96, 1);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 13.71px;
+  height: 24px;
+  transform: rotate(90deg);
+  transition: 0.1s ease-in-out;
+}
+
+.arrowOpen {
+  transform: rotate(-90deg);
+}
+
+aside {
+  width: auto;
+  background: rgba(246, 246, 246, 1);
+  padding: 20px;
+  border-radius: 0 0 5px 5px;
+}
