@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Importation pages
 import Accueil from "../pages/Accueil/Accueil";
 import Apropos from "../pages/Apropos/Apropos";
+import Error from "../pages/Error/Erreur";
+import Location from "../pages/Logements/Locations";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   //React StrictMode pour activer un ensemble des vérifs et des comportements supplémentaires pour le développement
@@ -15,6 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/a-propos" element={<Apropos />} />
+        <Route path="/appartement/:id" element={<Location />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

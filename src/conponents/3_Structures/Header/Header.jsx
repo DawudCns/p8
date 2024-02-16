@@ -6,6 +6,7 @@ import Navigation from "/src/conponents/2_Fondations/Navigation/Navigation";
 
 // Définition du composant Header
 function Header() {
+  // Retourne le contenu du composant Header
   return (
     <header>
       {/* Affichage du logo */}

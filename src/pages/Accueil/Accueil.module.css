@@ -1,82 +1,87 @@
+/* Réinitialisation des marges, des rembourrages et de la boîte de modèle pour tous les éléments */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat;
+  font-family: Montserrat; /* Utilisation de la police Montserrat pour tous les éléments */
 }
 
+/* Styles de base pour les liens */
 a {
-  text-decoration: none;
-  color: black;
+  text-decoration: none; /* Suppression du soulignement par défaut */
+  color: black; /* Couleur du texte des liens */
 }
 
-/******** main ********/
+/* Styles de la section principale de la page d'accueil */
 .mainAccueil {
-  max-width: 1440px;
-  padding: 0 100px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 1440px; /* Largeur maximale de la section */
+  padding: 0 100px; /* Espacement intérieur de 0 sur les côtés et 100px en haut et en bas */
+  margin-top: 40px; /* Marge en haut de la section */
+  margin-left: auto; /* Mise en page automatique à gauche */
+  margin-right: auto; /* Mise en page automatique à droite */
 }
 
+/* Styles de la galerie d'éléments */
 .gallery {
-  border-radius: 25px;
-  background: rgba(246, 246, 246, 1);
-  padding: 50px 0 40px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 57px;
+  border-radius: 25px; /* Bordure arrondie de la galerie */
+  background: rgba(246, 246, 246, 1); /* Couleur de fond de la galerie */
+  padding: 50px 0 40px; /* Espacement intérieur de 50px en haut, 0 à droite et 40px en bas */
+  display: flex; /* Affichage en mode flexbox pour aligner les éléments horizontalement */
+  justify-content: center; /* Alignement au centre des éléments horizontalement */
+  flex-wrap: wrap; /* Enroulement des éléments sur plusieurs lignes si nécessaire */
+  gap: 57px; /* Espacement entre les éléments de la galerie */
 }
 
+/* Styles des éléments individuels de la galerie */
 .location {
-  position: relative;
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  background: rgba(255, 96, 96, 1);
+  position: relative; /* Positionnement relatif pour permettre le positionnement absolu du texte */
+  width: 340px; /* Largeur des éléments de la galerie */
+  height: 340px; /* Hauteur des éléments de la galerie */
+  border-radius: 10px; /* Bordure arrondie des éléments */
+  background: rgba(255, 96, 96, 1); /* Couleur de fond des éléments */
 }
 
+/* Styles du texte à l'intérieur des éléments de la galerie */
 .location p {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
+  position: absolute; /* Positionnement absolu pour positionner le texte en bas à gauche */
+  bottom: 20px; /* Marge en bas de 20px */
+  left: 20px; /* Marge à gauche de 20px */
+  color: white; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police */
+  font-weight: 500; /* Graisse de la police */
 }
 
+/* Styles pour les images de couverture à l'intérieur des éléments de la galerie */
 .imgCover {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  width: 100%; /* Largeur de 100% */
+  height: 100%; /* Hauteur de 100% */
+  border-radius: 10px; /* Bordure arrondie */
 }
 
-/* Media queries RESPONSIVE */
+/* Media queries pour les écrans de taille moyenne */
 @media screen and (max-width: 944px) {
+  /* Ajustements pour la section principale de la page d'accueil */
   .mainAccueil {
-    margin-top: 0;
+    margin-top: 0; /* Suppression de la marge en haut */
   }
 
+  /* Ajustements pour la galerie d'éléments */
   .gallery {
-    padding-top: 30px;
-    padding-bottom: 0;
+    padding-top: 30px; /* Espacement intérieur de 30px en haut */
+    padding-bottom: 0; /* Pas d'espacement intérieur en bas */
   }
 
-  /* GALLERY */
-  .gallery {
-    background-color: white;
-    margin: auto;
-  }
-
+  /* Ajustements pour les éléments individuels de la galerie */
   .location {
-    width: 335px;
-    height: 255px;
+    width: 335px; /* Largeur réduite pour s'adapter à l'écran */
+    height: 255px; /* Hauteur réduite pour s'adapter à l'écran */
   }
 }
 
+/* Media queries pour les écrans de petite taille */
 @media screen and (max-width: 540px) {
+  /* Ajustements pour la section principale de la page d'accueil */
   .mainAccueil {
-    padding: 0 30px;
+    padding: 0 30px; /* Espacement intérieur réduit sur les côtés */
   }
 }

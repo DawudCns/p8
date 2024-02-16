@@ -1,9 +1,11 @@
+/* Réinitialisation des marges et des rembourrages */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Conteneur principal */
 .container {
   max-width: 1240px;
   margin: auto;
@@ -15,14 +17,12 @@
   margin-top: 30px;
 }
 
-/* .rideauDeroulant{
-   margin-top: 30px;
-}  */
-
+/* Styles des boutons */
 .button {
   margin-top: 30px;
 }
 
+/* Style de la section de description */
 aside {
   width: 82.5%;
   background: rgba(246, 246, 246, 1);
@@ -33,18 +33,21 @@ aside > p {
   color: rgba(255, 96, 96, 1);
 }
 
-/* Media QUERIES RESPONSIVE */
+/* Media queries pour les écrans de taille moyenne */
 @media screen and (max-width: 944px) {
   .container {
     padding: 0 30px;
   }
 }
 
+/* Media queries pour les petits écrans */
 @media screen and (max-width: 550px) {
+  /* Ajustement de la largeur des éléments */
   .divCategories {
     width: 100%;
   }
 
+  /* Ajustement de la taille de l'image de la bannière */
   .banniere2_img {
     background-size: cover;
     background-position: center;
@@ -52,10 +55,7 @@ aside > p {
     border-radius: 10px;
   }
 
-  main {
-    padding-top: 0;
-  }
-
+  /* Ajustement de la hauteur des éléments de la catégorie */
   .divCategories {
     height: 30px;
   }

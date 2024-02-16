@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 100px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+/* Carousel */
+.banniere {
+  position: relative;
+  max-width: 1440px;
+  height: 415px;
+  margin: auto;
+  border-radius: 25px;
+}
+
+.carousel {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.nbImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+  font-weight: 700;
+}
+
+.btnLeft {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btnRight {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: rotate(180deg);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Infos logement */
+.titleLoc {
+  font-size: 36px;
+  font-weight: 500;
+  color: rgba(255, 96, 96, 1);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 96, 96, 1);
+}
+
+.nameAddressLogement {
+  padding: 30px 0 20px;
+}
+
+.infos {
+  display: flex;
+  gap: 15px;
+}
+
+.childInfos {
+  display: flex;
+  align-items: center;
+  height: auto;
+  min-height: 30px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: rgba(255, 96, 96, 1);
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+}
+
+.infosLogements {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoLogementRight {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.identite {
+  display: flex;
+  gap: 10px;
+  padding: 30px 0 20px;
+  align-self: end;
+}
+
+.nomPrenom {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.imgProfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.star > ul {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  list-style-type: none;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  gap: 76px;
+  margin-top: 25px;
+}
+
+.btn1 {
+  width: 82.5%;
+}
+.btn2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 82.5%;
+}
+
+/* Medias queries */
+@media screen and (max-width: 1050px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .infos {
+    flex-wrap: wrap;
+  }
+
+  .infosLogements {
+    flex-direction: column;
+  }
+
+  .infoLogementRight {
+    flex-direction: row-reverse;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .identite {
+    padding: 0;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .btn2,
+  .btn1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .identite,
+  .star {
+    display: flex;
+    align-items: center;
+  }
+
+  .btnLeft > img,
+  .btnRight > img {
+    height: 19.8px;
+    width: 11.67px;
+  }
+
+  .btnLeft {
+    left: 10px;
+  }
+  .btnRight {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .nom {
+    font-size: 12px;
+  }
+
+  .imgProfil {
+    height: 32px;
+    width: 32px;
+  }
+}

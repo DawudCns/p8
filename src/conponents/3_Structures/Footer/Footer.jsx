@@ -1,4 +1,4 @@
-// Importation CSS composant Footer
+// Importation des styles CSS du composant Footer
 import styles from "/src/conponents/3_Structures/Footer/Footer.module.css";
 // Importation du logo
 import LogoBis from "/src/assets/images/logo-kasa.png";
@@ -7,6 +7,7 @@ import LogoBis from "/src/assets/images/logo-kasa.png";
 function Footer() {
   return (
     <>
+      {/* Section contenant le footer */}
       <footer>
         {/* Section contenant le logo */}
         <div className={styles.logo_footer}>

@@ -1,48 +1,60 @@
+/* Styles du header */
 header {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 50px 100px;
-  width: 100%;
+  display: flex; /* Affichage en mode flexbox */
+  justify-content: space-between; /* Alignement des éléments sur les extrémités */
+  max-width: 1440px; /* Largeur maximale du header */
+  margin: 0 auto; /* Marge automatique sur les côtés */
+  padding: 50px 100px; /* Espacement intérieur de 50 pixels en haut et en bas, 100 pixels à gauche et à droite */
+  width: 100%; /* Largeur de 100% */
 }
 
+/* Styles de la navigation */
 nav {
-  display: flex;
-  gap: 57px;
-  align-items: center;
+  display: flex; /* Affichage en mode flexbox */
+  gap: 57px; /* Espacement entre les éléments */
+  align-items: center; /* Alignement vertical des éléments */
 }
 
+/* Styles des liens de navigation */
 .liens_globale {
-  text-decoration: none;
-  color: rgba(255, 96, 96, 1);
+  text-decoration: none; /* Pas de soulignement pour les liens */
+  color: rgba(255, 96, 96, 1); /* Couleur du texte */
 }
 
+/* Style des liens de navigation au survol */
 .liens_globale:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Soulignement au survol */
 }
 
+/* Style du lien actif dans la navigation */
 .activeLink {
-  text-decoration: underline;
+  text-decoration: underline; /* Soulignement pour le lien actif */
 }
 
+/* Media query pour les écrans de taille moyenne */
 @media screen and (max-width: 944px) {
+  /* Ajustement du padding du header pour les écrans de taille moyenne */
   header {
-    padding: 30px;
+    padding: 30px; /* Espacement intérieur de 30 pixels */
   }
 }
+
+/* Media query pour les écrans de petite taille */
 @media screen and (max-width: 630px) {
+  /* Transformation en majuscules des liens de navigation */
   .liens_globale {
-    text-transform: uppercase;
+    text-transform: uppercase; /* Transformation en majuscules */
   }
 
+  /* Ajustement de la taille des éléments de navigation pour les écrans de petite taille */
   nav {
-    gap: 26px;
-    font-size: 12px;
+    gap: 26px; /* Espacement réduit entre les éléments */
+    font-size: 12px; /* Taille de police réduite */
   }
 
+  /* Ajustement de la taille du logo pour les écrans de petite taille */
   header img {
-    width: 145px;
-    height: 46.88px;
+    width: 145px; /* Largeur du logo réduite */
+    height: 46.88px; /* Hauteur du logo réduite */
   }
 }

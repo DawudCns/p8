@@ -1,8 +1,10 @@
+/* Conteneur principal du bouton */
 .btncomplet {
   width: 100%;
   position: relative;
 }
 
+/* Style du rideau déroulant */
 .rideauDeroulant {
   display: flex;
   align-items: center;
@@ -13,12 +15,14 @@
   background: rgba(255, 96, 96, 1);
 }
 
+/* Style du texte de la catégorie */
 .categories {
   margin-left: 20px;
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
 }
 
+/* Style du bouton à l'intérieur du rideau déroulant */
 .rideauDeroulant > button {
   border: none;
   background-color: rgba(255, 96, 96, 1);
@@ -26,6 +30,7 @@
   cursor: pointer;
 }
 
+/* Style de l'icône de la flèche */
 .arrow {
   width: 13.71px;
   height: 24px;
@@ -33,10 +38,12 @@
   transition: 0.1s ease-in-out;
 }
 
+/* Style de l'icône de la flèche lorsque le contenu est ouvert */
 .arrowOpen {
   transform: rotate(-90deg);
 }
 
+/* Style de la section contenant la description */
 aside {
   width: auto;
   background: rgba(246, 246, 246, 1);

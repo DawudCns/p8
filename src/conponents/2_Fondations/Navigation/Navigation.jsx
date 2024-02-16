@@ -6,8 +6,8 @@ import { useState } from "react";
 
 // Définition du composant Navigation
 const Navigation = () => {
+  // Retourne un élément de navigation contenant deux liens NavLink
   return (
-    // Crée un élément de navigation contenant deux liens NavLink
     <nav>
       <NavLink link="/" title="Accueil" />
       <NavLink link="/a-propos" title="A propos" />

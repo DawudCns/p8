@@ -3,6 +3,7 @@ import LogoBis from "/src/assets/images/logo-kasa.png";
 
 // Définition du composant Logo
 const Logo = () => {
+  // Retourne le contenu du composant Logo
   return (
     // Section contenant l'image du logo
     <section>
