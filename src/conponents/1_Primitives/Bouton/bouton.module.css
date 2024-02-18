@@ -1,11 +1,11 @@
 /* Conteneur principal du bouton */
-.btncomplet {
+.boutonGlobal {
   width: 100%;
   position: relative;
 }
 
 /* Style du rideau déroulant */
-.rideauDeroulant {
+.deroulantSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,14 +16,14 @@
 }
 
 /* Style du texte de la catégorie */
-.categories {
+.typeCategorie {
   margin-left: 20px;
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
 }
 
 /* Style du bouton à l'intérieur du rideau déroulant */
-.rideauDeroulant > button {
+.deroulantSection > button {
   border: none;
   background-color: rgba(255, 96, 96, 1);
   margin-right: 20px;
@@ -31,7 +31,7 @@
 }
 
 /* Style de l'icône de la flèche */
-.arrow {
+.fleche {
   width: 13.71px;
   height: 24px;
   transform: rotate(90deg);
@@ -39,12 +39,12 @@
 }
 
 /* Style de l'icône de la flèche lorsque le contenu est ouvert */
-.arrowOpen {
+.flecheOuverte {
   transform: rotate(-90deg);
 }
 
 /* Style de la section contenant la description */
-aside {
+.sousPartie {
   width: auto;
   background: rgba(246, 246, 246, 1);
   padding: 20px;

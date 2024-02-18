@@ -30,7 +30,7 @@ aside {
 }
 
 aside > p {
-  color: rgba(255, 96, 96, 1);
+  color: black;
 }
 
 /* Media queries pour les écrans de taille moyenne */

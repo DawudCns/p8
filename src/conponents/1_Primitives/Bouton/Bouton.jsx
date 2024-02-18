@@ -15,16 +15,16 @@ function Btns({ name, text }) {
   };
 
   return (
-    <div className={styles.btncomplet}>
+    <div className={styles.boutonGlobal}>
       {/* Conteneur principal du bouton */}
-      <div className={styles.rideauDeroulant}>
+      <div className={styles.deroulantSection}>
         {/* Nom de la catégorie */}
-        <p className={styles.categories}>{name}</p>
+        <p className={styles.typeCategorie}>{name}</p>
         {/* Bouton pour déclencher le changement de l'état "open" */}
         <button onClick={handleClick}>
           {/* Flèche avec classe CSS conditionnelle pour l'animation */}
           <img
-            className={`${styles.arrow} ${open && styles.arrowOpen}`}
+            className={`${styles.fleche} ${open && styles.flecheOuverte}`}
             src={ArrowImg}
             alt="Flèche qui ouvre la description"
           />
@@ -32,7 +32,7 @@ function Btns({ name, text }) {
       </div>
       {/* Affichage de la description si "open" est true */}
       {open && (
-        <aside className={styles.textHidden}>
+        <aside className={styles.sousPartie}>
           {/* Texte de la description */}
           <p key={data.id}>{text}</p>
         </aside>
@@ -42,3 +42,4 @@ function Btns({ name, text }) {
 }
 
 export default Btns;
+
