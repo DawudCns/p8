@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat; /* Utilisation de la police Montserrat pour tous les éléments */
+  font-family: Montserrat sans-serif; /* Utilisation de la police Montserrat pour tous les éléments */
 }
 
 /* Styles de base pour les liens */
