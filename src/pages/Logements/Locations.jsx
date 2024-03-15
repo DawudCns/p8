@@ -14,11 +14,12 @@ import Btns from "../../conponents/1_Primitives/Bouton/Bouton";
 import star from "../../assets/images/VectorGris.png";
 import starFull from "../../assets/images/VectorFull.png";
 
+//1
 function Location() {
   // Récupère le paramètre d'URL "id" à l'aide du hook useParams
   const { id } = useParams();
 
-  // Recherche l'objet logement correspondant à l'ID dans les données
+  // 2. Recherche l'objet logement correspondant à l'ID dans les données
   const item = data.find((appartement) => appartement.id === id);
   // Si aucun logement n'est trouvé, redirige vers la page d'erreur 404
   if (item === undefined) {
@@ -26,16 +27,16 @@ function Location() {
   }
 
   const imagesCarousel = item.pictures;
-  // Initialise l'état local "slide" pour gérer l'index de l'image
+  // 3 Initialise l'état local "slide" pour gérer l'index de l'image
   const [slide, setSlide] = useState(0);
 
-  // Fonction pour passer à l'image suivante dans le carousel
+  //3 Fonction pour passer à l'image suivante dans le carousel
   const slideSuivant = () => {
     const newImage = (slide + 1) % imagesCarousel.length;
     setSlide(newImage);
   };
 
-  // Fonction pour passer à l'image précédente dans le carousel
+  //3  Fonction pour passer à l'image précédente dans le carousel
   const slidePrecedent = () => {
     const newImage =
       (slide - 1 + imagesCarousel.length) % imagesCarousel.length;
@@ -126,7 +127,7 @@ function Location() {
           </section>
         </section>
 
-        {/* Section pour afficher les boutons "Description" et "Equipement" */}
+        {/* 5 Section pour afficher les boutons "Description" et "Equipement" */}
         <section className={styles.btns}>
           <div className={styles.btn1}>
             {/* Bouton "Description" */}
