@@ -77,16 +77,22 @@ function Location() {
           <div className={styles.carousel}>
             <img src={imagesCarousel[slide]} alt="" />
           </div>
-          <p className={styles.nbImg}>
-            {slide + 1}/{nbrPictures}
-          </p>
+          {nbrPictures > 1 && (
+            <p className={styles.nbImg}>
+              {slide + 1}/{nbrPictures}
+            </p>
+          )}
           {/* Boutons pour naviguer dans le carousel */}
-          <button onClick={slidePrecedent} className={styles.btnLeft}>
-            <img src={Arrow} alt="" />
-          </button>
-          <button onClick={slideSuivant} className={styles.btnRight}>
-            <img src={Arrow} alt="" />
-          </button>
+          {nbrPictures > 1 && (
+            <button onClick={slidePrecedent} className={styles.btnLeft}>
+              <img src={Arrow} alt="" />
+            </button>
+          )}
+          {nbrPictures > 1 && (
+            <button onClick={slideSuivant} className={styles.btnRight}>
+              <img src={Arrow} alt="" />
+            </button>
+          )}
         </section>
 
         {/* Section pour afficher les informations sur le logement */}
